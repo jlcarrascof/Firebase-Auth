@@ -26,12 +26,28 @@ const appFirebase = initializeApp(firebaseConfig);
 // Firebase Authentication
 const auth = getAuth(appFirebase);
 
+// Import components
+
+import Home from './components/Home';
+import Login from './components/Login';
 
 function App() {
+
+  // Firebase Authentication
+  const [user, setUser] = useState(null);
+
+  onAuthStateChanged(auth, (userFirebase) => {
+    if (userFirebase) {
+      setUser(userFirebase);
+    } else {
+      setUser(null);
+    }
+  });
 
   return (
     <div>
       <h1>React Firebase Authentication</h1>
+      {user ? <Home /> : <Login />}
     </div>
   )
 }
