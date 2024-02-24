@@ -47,7 +47,7 @@ function App() {
   return (
     <div>
       <h1>React Firebase Authentication</h1>
-      {user ? <Home /> : <Login />}
+      {user ? <Home userEmail = {user.email} /> : <Login />}
     </div>
   )
 }
