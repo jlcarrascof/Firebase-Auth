@@ -10,6 +10,16 @@ const storageBucket = process.env.REACT_APP_STORAGE_BUCKET;
 const messagingSenderId = process.env.REACT_APP_MESSAGING_SENDER_ID;
 const appId = process.env.REACT_APP_APP_ID;
 
+// Initializing the Firebase app
+const firebaseConfig = {
+  apiKey,
+  authDomain,
+  projectId,
+  storageBucket,
+  messagingSenderId,
+  appId,
+};
+
 function App() {
 
   return (
