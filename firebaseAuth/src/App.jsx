@@ -28,8 +28,8 @@ const auth = getAuth(appFirebase);
 
 // Import components
 
-import Home from './components/Home';
-import Login from './components/Login';
+import Home from '../src/components/Home';
+import Login from '../src/components/Login';
 
 function App() {
 
