@@ -20,6 +20,13 @@ const firebaseConfig = {
   appId,
 };
 
+// Firebase setup
+const appFirebase = initializeApp(firebaseConfig);
+
+// Firebase Authentication
+const auth = getAuth(appFirebase);
+
+
 function App() {
 
   return (
