@@ -1,6 +1,7 @@
 // Importing the required libraries
 import { initializeApp } from "firebase/app";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useState } from "react";
 
 // Importing the required environment variables
 const apiKey = import.meta.env.VITE_API_KEY;
