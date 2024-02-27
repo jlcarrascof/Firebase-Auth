@@ -9,7 +9,9 @@ const Login = () => {
           <div className="father">
             <div className='card card-body'>
               <form>
-                <input type="email" placeholder="Enter Email" className='form-control' />
+                <input type="email" placeholder="Enter Email" />
+                <input type="password" placeholder="Enter Password" />
+                <button className='btn btn-primary'>Login</button>
               </form> 
             </div>
           </div>
